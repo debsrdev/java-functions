@@ -64,6 +64,10 @@ public class Calculator {
      * 1. divide 2 numbers
      */
     public static double divide(double number1, double number2) {
+        if (number2 == 0) {
+            System.out.println("Error: no se permite la división entre 0");
+            return Double.NaN;
+        }
         return number1 / number2;
     }
 
