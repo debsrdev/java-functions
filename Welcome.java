@@ -1,9 +1,31 @@
 //Inicializa la clase Welcome
 //Crea el método main
-
 //Tarea 1
 //Define el método greeting que imprima en terminal ¡Hola FemCoder!
-//Ejecuta el método greeting 
+//Ejecuta el método greeting
+
+import java.util.Scanner;
+
+public class Welcome {
+    static void greeting() {
+        System.out.println("¡Hola FemCoder!");
+    }
+    static void greetingCoder(String name) {
+        System.out.println("¡Hola " + name + "!");
+    }
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        greeting();
+
+        System.out.print("Introduce tu nombre: ");
+        String name = scanner.nextLine();
+        greetingCoder(name);
+
+        scanner.close();
+    }
+}
+
 
 //Tarea 2
 //Define el método greetingCoder que reciba un nombre y que imprima en terminal ¡Hola <name>!
